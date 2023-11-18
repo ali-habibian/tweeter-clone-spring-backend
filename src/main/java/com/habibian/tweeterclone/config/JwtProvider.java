@@ -5,6 +5,7 @@ import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.security.Keys;
 import org.springframework.security.core.Authentication;
+import org.springframework.stereotype.Service;
 
 import javax.crypto.SecretKey;
 import java.util.Date;
@@ -12,6 +13,7 @@ import java.util.Date;
 /**
  * Utility class for generating and extracting information from JWT tokens.
  */
+@Service
 public class JwtProvider {
     // Secret key for signing and verifying JWT tokens
     SecretKey key = Keys.hmacShaKeyFor(JwtConstant.SECRET_KEY.getBytes());
