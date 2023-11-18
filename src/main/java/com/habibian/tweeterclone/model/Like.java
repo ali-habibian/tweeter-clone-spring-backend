@@ -10,7 +10,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-@Table(name = "like")
+@Table(name = "likes")
 public class Like {
     /**
      * The unique identifier for the like.

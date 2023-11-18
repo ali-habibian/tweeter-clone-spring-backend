@@ -13,7 +13,7 @@ import java.util.List;
 @Getter
 @Setter
 @Entity
-@Table(name = "tweet")
+@Table(name = "tweets")
 public class Tweet {
     /**
      * The unique identifier for the tweet.
