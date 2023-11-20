@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,7 +14,7 @@ import java.util.List;
 @Getter
 @Setter
 @Entity
-@Table(name = "tweets")
+@Table(name = " tweets")
 public class Tweet {
     /**
      * The unique identifier for the tweet.
@@ -72,10 +73,12 @@ public class Tweet {
     /**
      * Flag indicating if the tweet is a reply.
      */
-    private boolean isReply;
+    private Boolean isReply;
 
     /**
      * Flag indicating if the object is a tweet.
      */
-    private boolean isTweet;
+    private Boolean isTweet;
+
+    private LocalDateTime createdAt;
 }
