@@ -97,4 +97,12 @@ public interface TweetService {
      * @return List of tweets liked by the user.
      */
     List<Tweet> findByLikesContainsUser(User user);
+
+    /**
+     * Saves an existing tweet.
+     *
+     * @param tweet The tweet to be saved.
+     * @return The saved tweet.
+     */
+    Tweet saveExistTweet(Tweet tweet);
 }

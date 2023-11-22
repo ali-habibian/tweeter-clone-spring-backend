@@ -173,4 +173,15 @@ public class TweetServiceImpl implements TweetService {
     public List<Tweet> findByLikesContainsUser(User user) {
         return tweetRepository.findAllByLikesUser_Id(user.getId());
     }
+
+    /**
+     * Saves an existing tweet.
+     *
+     * @param tweet The tweet to be saved.
+     * @return The saved tweet.
+     */
+    @Override
+    public Tweet saveExistTweet(Tweet tweet) {
+        return tweetRepository.save(tweet);
+    }
 }
