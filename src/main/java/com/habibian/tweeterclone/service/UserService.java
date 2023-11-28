@@ -32,7 +32,7 @@ public interface UserService {
      * Updates a user's information.
      *
      * @param userId The ID of the user to update.
-     * @param user   The updated user information.
+     * @param req   The updated user information.
      * @return The updated user.
      * @throws UserException If the user is not found.
      */
