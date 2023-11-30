@@ -40,7 +40,7 @@ public class UserDtoMapper {
      * @param users The list of User entities to be converted.
      * @return The corresponding list of UserDTOs.
      */
-    private static List<UserDTO> toUserDTOs(List<User> users) {
+    public static List<UserDTO> toUserDTOs(List<User> users) {
         List<UserDTO> userDTOs = new ArrayList<>();
 
         for (User user : users) {
